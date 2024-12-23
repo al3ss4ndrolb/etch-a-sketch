@@ -1,9 +1,13 @@
 const createDivs = () => {
-  for (let i = 0; i < 16 * 16; i++) {
+  for (let i = 0; i < 256; i++) {
     const newDiv = document.createElement("div");
     const container = document.querySelector(".container");
-    newDiv.setAttribute("style", "padding: 100px; margin: 100px;");
+    newDiv.classList.add("grid-cell"); // Adds styling class
     container.appendChild(newDiv);
+
+    newDiv.addEventListener("mouseover", () => {
+      newDiv.style.backgroundColor = "red";
+    });
   }
 };
 

@@ -8,13 +8,14 @@ body {
   flex-wrap: wrap;
   width: 500px;
   height: 500px;
-  margin: 0 auto; /* Center the grid on the page */
+  margin: auto; /* Center the grid on the page */
   border: 1px solid black; /* Optional, for visual reference */
 }
 
-.container div {
-  width: 1px;
-  height: 1px;
-  background-color: lightgray;
-  border: 1px solid black;
+.grid-cell {
+  flex: 1 0 calc(100% / 16); /* Makes cells fit in 16 columns */
+  height: calc(100% / 16); /* Ensures a square layout */
+  box-sizing: border-box; /* Ensures padding/border don't affect size */
+  border: 1px solid #ddd; /* Optional: For visibility */
+  background-color: lightblue;
 }
