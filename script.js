@@ -17,8 +17,8 @@ const createDivs = (gridSize) => {
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
 
-    newDiv.style.backgroundColor = "light blue";
-    newDiv.style.opacity = "0";
+    newDiv.style.backgroundColor = "black";
+    newDiv.style.opacity = "0.3";
 
     // Add hover effect
     newDiv.addEventListener("mouseover", () => {
