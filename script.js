@@ -1,13 +1,3 @@
-const btn = document.querySelector(".btn");
-btn.addEventListener("click", () => {
-  let userResponse = prompt("Enter number of squares:");
-
-  if (typeof userResponse == "number" && userResponse <= 1000) {
-  } else {
-    return "invalid input";
-  }
-});
-
 const createDivs = () => {
   for (let i = 0; i < 256; i++) {
     const newDiv = document.createElement("div");
@@ -21,5 +11,15 @@ const createDivs = () => {
   }
 };
 
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+  const userResponse = parseInt(prompt("Enter number of squares:"), 10);
+  if (!isNaN(userResponse) && userResponse <= 100) {
+    document.querySelector(".container").innerHTML = "";
+    createDivs();
+  } else {
+    return "invalid input";
+  }
+});
+
 createDivs();
-console.log("Script loaded");
