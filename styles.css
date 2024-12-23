@@ -19,3 +19,13 @@ body {
   border: 1px solid #ddd; /* Optional: For visibility */
   background-color: lightblue;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 50px;
+  font-size: 20px;
+}
