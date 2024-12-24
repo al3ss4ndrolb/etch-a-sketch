@@ -11,7 +11,7 @@ body {
   width: 500px;
   height: 500px;
   margin: auto; /* Center the grid on the page */
-  border: 1px solid black; /* Optional, for visual reference */
+  border: 10px solid black; /* Optional, for visual reference */
 }
 
 .grid-cell {
@@ -21,11 +21,25 @@ body {
 }
 
 .btn-container {
+  margin-left: 5em;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .btn {
-  margin: 40px;
+  display: flex;
   font-size: 20px;
+  height: 40px;
+  width: auto;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 1em;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-and-container {
+  display: flex;
+  margin: 20px;
 }
