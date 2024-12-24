@@ -1,9 +1,9 @@
 const createDivs = (gridSize) => {
   // function to create grid dinamically
   const container = document.querySelector(".container");
-  container.innerHTML = "";
+  container.innerHTML = ""; //clears out any existing content inside the container (like old grid cells) before creating a new grid
 
-  const cellSize = 500 / gridSize;
+  const cellSize = 500 / gridSize; //calculates the size of each square in the grid so that they all fit neatly into a 500-pixel-wide container
 
   for (let i = 0; i < gridSize * gridSize; i++) {
     // Generate grid cells
